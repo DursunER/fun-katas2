@@ -20,6 +20,7 @@ for (let i=0; i< myArr.length; i++) {
       mentionCount ++;
       myObj.mentions.push(myWord)
         }
+        
 }
 
 myObj.tagCount = tagCount;
