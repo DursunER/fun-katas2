@@ -1,12 +1,12 @@
 const getTweetData = require('../get-tweet-data.js');
 
-describe('getTweetData()', () => {
+describe('function which returns an object containing data from a given tweet', () => {
   test('tweet string with no tags, no mentions', () => {
 
       // Arrange
 
       const tweet = "My awesome tweet"
-      expected = { tags: [], mentions: [], tagCount: 0, mentionCount: 0, length: 16 }
+      const expected = { tags: [], mentions: [], tagCount: 0, mentionCount: 0, length: 16 }
 
       // Act
       const result = getTweetData(tweet)
