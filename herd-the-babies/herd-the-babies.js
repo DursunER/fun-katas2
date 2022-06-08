@@ -5,10 +5,10 @@ function herdTheBabies (str) {
     return str
   }
 
-let strArr = str.split(" ")
-
-const sorted = strArr.sort((a,b) =>  b-a )
-
+let strArr = str.split("")
+console.log(str)
+const sorted = strArr.sort().join('');  
+console.log(sorted)
 return sorted
 };
 

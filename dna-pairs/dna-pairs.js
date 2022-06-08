@@ -3,20 +3,18 @@ function dnaPairs(dna) {
 
   const dnaPairs = { "C": "G", "G": "C", "T": "A", "A": "T" };
   let dnaArr = [];
-  let dnaArrTemp = [];
 
   if (dna === "") {
     return []
   }
 
   for (let i=0; i < dna.length; i++) {
-      dnaArrTemp[0] = dna[i]
-      dnaArrTemp[1] = dnaPairs[dna[i]];
-      dnaArr = dnaArr.concat(dnaArrTemp); 
 
-      console.log(dnaArrTemp)
-      console.log(dnaArr)
-     
+    let key = dnaPairs[dna[i]];
+    let dnaArrTemp = [];
+    dnaArrTemp.push(dna[i])
+    dnaArrTemp.push(key)
+    dnaArr.push(dnaArrTemp)
   }
 
   return dnaArr;

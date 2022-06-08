@@ -3,11 +3,6 @@ function changeCalculator (change) {
 
    let changeBack = {};
 
-   if (change === 1) {
-      const key = "1";
-      changeBack[key] = 1
-} 
-
   if (change >= 50) {
       const xFifties = Math.floor(change/50);
       const key = "50";
@@ -42,7 +37,13 @@ if (change >= 2) {
    changeBack[key] = xTwos
    change = change % 2
 } 
- 
+
+if (change === 1) {
+   const key = "1";
+   changeBack[key] = 1
+} 
+
+ console.log(changeBack)
 return changeBack
   
 };

@@ -2,7 +2,7 @@
 
 describe.only('change-calculator()', () => {
     
-    test('calculate the change the customer gets backis £1', () => {
+    test('calculate the change the customer gets back is £1', () => {
       
     // Arrange
         const change = 1
@@ -16,10 +16,10 @@ describe.only('change-calculator()', () => {
 
     }); 
 
-   test ('calculate the change the customer gets backis £13', () => {
+   test('calculate the change the customer gets back is £13', () => {
       
     // Arrange
-        const change = 14
+        const change = 13
         expected = {'10':1,'2':1,'1':1}
 
     //Act
